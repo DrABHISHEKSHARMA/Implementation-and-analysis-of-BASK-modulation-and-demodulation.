@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags --> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <title>Implementation and analysis of BASK modulation and demodulation</title>
+  </head>
+  <body onload="initial()">
+    
+<div class="heading">
+       <h4><b>AIM :- </b>Implementation and analysis of BASK modulation and demodulation</h4>
+   </div>
+
+
+
+   <div class="bitGen">
+     <div class="bitGen2">
+       
+      <div class="switchRed shadow" onclick="onOff()"></div>
+      <div class="led "><img id="leds" src="images/redLed.png"/></div>
+      <div class="clock shift1"></div>
+      <div class="clock shift2"></div>
+      <div class="clock shift3"></div>
+      <div class="clock1 shift4"></div>
+     
+      
+
+        
+      
+
+   
+      <div class="s7" style="margin-left: 207px;" onclick="toogle1();playAudio('images/switchOn.mp3')"><img id="s7" src="images/togglePin.png"/></div>
+      <div class="s7" style="margin-left: 263px;" onclick="toogle2();playAudio('images/switchOn.mp3')"><img id="s6" src="images/togglePin.png"/></div>
+      <div class="s7" style="margin-left: 314px;" onclick="toogle3();playAudio('images/switchOn.mp3')"><img id="s5" src="images/togglePin.png"/></div>
+      <div class="s7" style="margin-left: 368px;" onclick="toogle4();playAudio('images/switchOn.mp3')"><img id="s4" src="images/togglePin.png"/></div>
+      <div class="s7" style="margin-left: 417px;" onclick="toogle5();playAudio('images/switchOn.mp3')"><img id="s3" src="images/togglePin.png"/></div>
+      <div class="s7" style="margin-left: 468px;" onclick="toogle6();playAudio('images/switchOn.mp3')"><img id="s2" src="images/togglePin.png"/></div>
+      <div class="s7" style="margin-left: 519px;" onclick="toogle7();playAudio('images/switchOn.mp3')"><img id="s1" src="images/togglePin.png"/></div>
+      <div class="s0" style="margin-left: 570px;" onclick="toogle8();playAudio('images/switchOn.mp3')"><img id="s0" src="images/togglePin.png"/></div>
+      
+
+
+
+     </div>
+
+   </div>
+
+
+
+
+
+
+
+
+   <div class="base">
+       <div class="leftTab">
+           <div class="funGen">
+
+              <!----------------------------- function generator --------------------------------->
+              
+              <div class="heading1"><h4>8 Bit Variable Data</h4></div>
+
+                <!---------------------------- Amplitude ------------------------------->
+
+              <div class="data">
+                <div class="dataBorder">
+                  <h1 class="letter" id="data7">0</h1>
+                  <h1 class="letter" id="data6">0</h1>
+                  <h1 class="letter" id="data5">0</h1>
+                  <h1 class="letter" id="data4">0</h1>
+                  <h1 class="letter" id="data3">0</h1>
+                  <h1 class="letter" id="data2">0</h1>
+                  <h1 class="letter" id="data1">0</h1>
+                  <h1 class="letter" id="data0">0</h1>
+                  
+                  
+                </div>
+              </div>
+
+              <div class="data2">
+                <div class="dataBorder2">
+                  <h6 class="letter1">S7</h6>
+                  <h6 class="letter1">S6</h6>
+                  <h6 class="letter1">S5</h6>
+                  <h6 class="letter1">S4</h6>
+                  <h6 class="letter1">S3</h6>
+                  <h6 class="letter1">S2</h6>
+                  <h6 class="letter1">S1</h6>
+                  <h6 class="letter1">S0</h6>
+                  
+                </div>
+              </div>
+
+              <div class="amplitude">
+                <div class="left">
+                  <h6>Amplitude(m) (Message signal)</h6>
+                  <input type="range" min="1" step="1" max="10" value="5" class="slider" id="myRange1">
+                </div>
+                <div class="middle"><p class="ampValue"><span id="sliderAmp"></span></p></div>
+                <div class="right"><img id="pin1" src="images/meterPin.png" /></div>
+              </div>
+              <br>
+              <div class="frequency">
+                <div class="left">
+                  <h6>Frequency(Hz) (Message signal)</h6>
+                  <input type="range" min="1" step="1" max="15" value="10" class="slider" id="myRange2">
+                </div>
+                <div class="middle"><p class="freValue"><span id="sliderFre"></span></p></div>
+                <div class="right1"><img id="pin2" src="images/meterPin.png" /></div>
+              </div>
+
+              <div class="bottomButton"> 
+                  <!-- <div class="study"><button onclick="study()"  type="button" class="btn shadow btn-lg"><h5>Study</h5></button></div> -->
+                  <div  class="run"><button onclick="run()" type="button" class="btn shadow btn-lg"><h5>Run</h5></button></div>
+              </div>
+
+           </div>
+           <div class="instruction">
+            <div class="heading1"><h4>Instruction</h4></div>
+            <div class="steps">
+              <ol type="1">
+                <li>First turn on the 8 Bit variable data generator using power switch, which helps to generate the data signal from given data.</li>
+                <br>
+                <li>Change the orientation of Data switch as per as you data, for 0 toggle it to up or vice versa.</li>
+                <br>
+                <li>Check tha data again from S0 to S7 bit and set the amplitude and frequency of message signal.</li>
+                <br>
+                <li>Click on RUN button to generate the BASK signal.</li>
+                <br>
+                <li>Observe the graph and download it from right top corner of graph in png, jpeg, pdf format.</li>
+                <br>
+                <li>To decode the BASK signal click the decode button shown below.</li>
+              </ol>
+               
+            </div>
+            </div>
+
+       </div>
+       <div class="rightTab">
+          <div class="rightUpper">
+              <div class="messageWave " style="height:50%; width:100%;background-color: antiquewhite;">
+                <div id="chartContainer" style="height: 98%; width:99%; margin: 0 auto;"></div>
+                <!-- <hr style="width: 100px; color:black;border-top: 10px solid white; margin-top: -9.7px;position: absolute;">
+                <hr style="width: 100px; color:black;border-top: 10px solid white; margin-top: -9.7px;position: absolute; right: 45px;"> -->
+                <br>
+                
+              </div>
+              <div class="pulseWave conatiner-fluid" style="height:50%; width:100%; background-color: antiquewhite;">
+                <div id="chartContainer1" style="height: 98%; width:99%; margin: 0 auto;"></div> 
+              </div>
+          </div>
+          <br>
+          
+          <div class="rightLower">
+            <div class="pulseWave conatiner-fluid" style="height:100%; width:100%; background-color: antiquewhite;">
+              <div id="chartContainer2" style="height: 98%; width:100%;"></div> 
+            </div>
+            
+
+            
+ 
+          </div>
+       </div>
+
+ </div>
+<br><br>
+
+
+
+
+<div class="demodulation">
+  <div class="inner">
+    <div class="figure">
+      <div style="margin: 0 auto; text-align: center; display: flex; ">
+        <h3 class="obsHead1">Decoding of BASK Signal</h3>
+      </div>
+
+      <div class="figimg"><img src="images/figure2.png"></div>
+    <br><br><br>
+      <p><b>-></b> For decoding the BASK encoded signal, This process is used first modulated signal passes through the rectifier then Low-Pass filter results to form demodulated signal.
+        .</p>
+      <span class="br" style="display: block; margin-bottom: 1em;"></span>
+
+      <div style="text-align: center;">
+        <button type="button" class="reconButton w3-round-xxlarge" onclick="demod()">Decode</button>
+        
+      </div>
+
+    </div>
+    <div class="resinWave">
+      <div id="chartContainer4" style="height: 98%; width:99%; margin: 0 auto;"></div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="js/index.js"></script>
+    <script src="js/canvas.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+

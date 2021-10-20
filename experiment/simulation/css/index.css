@@ -1,0 +1,558 @@
+body{
+    width: 1490px;
+    height: 100vh;
+    background-color: #33adff;
+    overflow: scroll;
+}
+
+.heading{
+    text-align: center;
+    background-color: aliceblue;
+    margin: auto;
+    width: 80%;
+    right: 30px;
+    height: 40px;
+    border-radius: 0px 0px 15px 15px;
+    
+}
+
+.base{
+    width: 95rem;
+    height: 690px;
+    margin-left: 0px;
+    margin-top: 20px;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    
+}
+
+.leftTab{
+    width: 25%;
+    height: 165%;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.rightTab{
+    width: 75%;
+    height: 165%;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.funGen{
+    height: 46%;
+    width: 95%;
+    margin: 0 auto;
+    background-color: rgb(46, 125, 170);
+    margin-top: 7px;
+    border-radius: 5px;
+}
+
+.instruction{
+    height: 52%;
+    width: 95%;
+    margin: 0 auto;
+    background-color: rgb(46, 125, 170);
+    margin-top: 7px;
+    border-radius: 5px;
+}
+.heading1{
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 0px 0px 5px 5px;
+    width: 70%;
+    text-align: center;
+}
+ 
+  
+.zoom {
+    transition: transform 0.6s;
+   
+   }
+   
+   .zoom:hover {
+     -ms-transform: scale(1.1); /* IE 9 */
+     -webkit-transform: scale(1.1); /* Safari 3-8 */
+     transform: scale(1.1); 
+     /* box-shadow: 0 10px 15px 0 rgba(0,0,0,0.4); */
+   }
+
+
+.rightUpper{
+    width: 100%;
+    height: 63%;
+    border:9px solid rgb(46, 125, 170);
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: white;
+
+}
+.rightLower{
+    width: 100%;
+    height: 34%;
+    border:9px solid rgb(46, 125, 170);
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 8px;
+    background-color: white;
+}
+.canvasjs-chart-credit{
+    display:none;
+}
+
+.bitGen{
+    width: 65%;
+    height: 375px;
+    border: 9px solid rgb(46, 125, 170);
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 8px;
+    
+}
+.bitGen2{
+    height: 350px;
+    width: 100%;
+    background-image: url(../images/bitGenerator.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    
+
+}
+
+
+.s7{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 238px;
+    padding: 10px;
+    box-shadow: 0 12px 17px 0 rgba(0, 0, 0, 0.4); 
+}
+.s7 img{
+    width: 20px;
+    height: 35px;
+    position: absolute;
+    margin-top: 8px;
+    
+}
+
+.s0{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 238px;
+    padding: 11.5px;
+    box-shadow: 0 12px 17px 0 rgba(0, 0, 0, 0.4); 
+}
+.s0 img{
+    width: 20px;
+    height: 35px;
+    position: absolute;
+    margin-top: 7px;
+}
+
+.data{
+    width: 85%;
+    height: 12%;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 40px;
+    padding: 5px;
+}
+.dataBorder{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+.letter{
+    width: 12.5%;
+    text-align: center;
+}
+.letter1{
+    width: 12.5%;
+    text-align: center;
+}
+.data2{
+    width: 85%;
+    height: 8%;
+    color: white;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 0px;
+    padding: 5px;
+    
+}
+.dataBorder2{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+.bottomButton{
+    width: 95%;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+}
+.study{
+    width: 50%;
+   padding: 10px;
+}
+.study button{
+    margin: 0 auto;
+    margin-left: 20px;
+    background-color: #4CAF50;
+    border: 4px solid white;
+    border-radius: 5px;
+    
+    
+}
+
+
+
+.run{
+    width: 50%;
+    padding: 10px;
+    
+}
+.run button{
+    margin: 0 auto;
+    margin-left: 110px;
+    border: 4px solid white;
+    border-radius: 5px;
+    background-color: #4CAF50;
+}
+
+.shadow {
+    transition: transform 0.6s;
+   
+   }
+   
+   .shadow:hover {
+     -ms-transform: scale(1.1); /* IE 9 */
+     -webkit-transform: scale(1.1); /* Safari 3-8 */
+     transform: scale(1.05); 
+     box-shadow: 0 10px 15px 0 rgba(0,0,0,0.4); 
+   }
+
+ .switchRed{
+     width: 37px;
+     height: 33px;
+     background-color: red;
+     position: absolute;
+     margin-top: 72px;
+     margin-left: 92px;
+     box-shadow: 0 10px 15px 0 rgba(44, 44, 44, 0.4); 
+ }  
+
+ .led{
+     width: 19px;
+     height: 19px;
+     margin-left:220px;
+     margin-top: 40px;
+     position: absolute;
+
+ }
+ .led img{
+     width: 40px;
+     height: 40px;
+     border: 1px solid rgb(87, 85, 85);
+     border-radius: 50%;
+     box-shadow: 0 12px 17px 0 rgba(19, 19, 19, 0.4); 
+ }
+ .clock{
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    box-shadow: 0 12px 17px 0 rgba(0, 0, 0, 0.4); 
+    position: absolute;
+    margin-top: 207px;
+    
+}
+
+.shift1{
+    margin-left: 70px;
+}
+.shift2 {
+    margin-left: 653px;
+}
+.shift3 {
+    margin-left: 776px;
+}
+.shift4 {
+    margin-left: 770px;
+}
+.clock1{
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    box-shadow: 0 12px 17px 0 rgba(0, 0, 0, 0.4); 
+    position: absolute;
+    margin-top: 66px;
+    
+}
+
+.steps{
+    padding: 0px;
+    color: honeydew;
+    font-weight: 500;
+    padding: 2px;
+}
+
+
+.demodulation{
+    width: 102%;
+    height: 400px;
+    margin: 0 auto;
+    padding: 5px;
+    margin-top: 450px;
+}
+.inner{
+    width: 99%;
+    height: 99%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+}
+.figure{
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    border:9px solid rgb(46, 125, 170);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.resinWave{
+    width: 69%;
+    height: 98%;
+    background-color: white;
+    border:9px solid rgb(46, 125, 170);
+    border-radius: 5px;
+    margin-left: auto;
+}
+.obsHead{
+    background-color: azure;
+    border-radius: 3px;
+    width: 100%;
+    
+    
+}
+.obsHead1{
+  background-color: azure;
+  border-radius: 3px;
+  margin: 0 auto;
+  
+}
+.button{
+    margin: 0 auto;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    
+}
+.button:focus{
+  outline: none;
+  border: none;
+}
+
+.figimg{
+    width: 410px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.figimg img{
+    width: 75%;
+    height: 130%;
+    margin-left: 50px;
+
+}
+.btn2 {
+  border: none; /* Remove borders */
+  color: white; /* Add a text color */
+  position: absolute;
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  margin-top: 8px;
+  margin-left: -100px;
+  border-radius: 3px;
+ 
+}
+.reconButton{
+    border: 2px solid blue;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: white;
+    
+}
+
+.reconButton:hover{
+    background-color: #035efc;
+    color: white;
+    transition: .5s;
+
+}
+
+.amplitude{
+    width: 95%;
+    height: 22%;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+
+}
+
+.frequency{
+    width: 95%;
+    height: 22%;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.left{
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-top: 25px;
+   
+}
+.middle{
+    width: 15%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.right{
+    width: 45%;
+    height: 100%;
+    background-image: url("../images/AmpMsg.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.right1{
+    width: 45%;
+    height: 100%;
+    background-image: url("../images/AmpMsg.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.right img{
+    width: 4px;
+    height: 49px;
+    margin-top: 25px;
+}
+.right1 img{
+    width: 4px;
+    height: 49px;
+    margin-top: 25px;
+}
+
+
+#pin1{
+    transform: rotate(-8deg);
+    transform-origin: bottom center;
+    transition: 4s;
+}
+
+#pin2{
+    transform: rotate(32deg);
+    transform-origin: bottom center;
+    transition: 4s;
+}
+
+.right1{
+    width: 45%;
+    height: 100%;
+    background-image: url("../images/FreMsg.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ampValue{
+    border:2px solid rgb(46, 125, 170);
+    width: 43px;
+    height: 25px;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+}
+.freValue{
+    border:2px solid rgb(46, 125, 170);
+    width: 43px;
+    height: 25px;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+}
+.slider {
+    appearance: none;
+    width: 80%;
+    height: 9px;
+    opacity: 0.7;
+    border-radius: 5px;
+    background: rgb(211, 211, 211);
+    outline: none;
+    transition: opacity 0.2s ease 0s;
+}
+
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%; 
+    background: rgb(46, 125, 170);
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: rgb(46, 125, 170);
+    cursor: pointer;
+  }
+
+ 
